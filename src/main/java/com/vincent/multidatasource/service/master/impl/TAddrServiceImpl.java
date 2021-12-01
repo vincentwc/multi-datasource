@@ -16,12 +16,9 @@ import java.util.List;
 @Service
 public class TAddrServiceImpl extends ServiceImpl<TAddrMapper, TAddr> implements ITAddrService {
 
-    @Resource
-    private TAddrMapper mapper;
 
     @Override
     public List<TAddr> getAll() {
         return lambdaQuery().list();
-//        return mapper.getAll();
     }
 }

@@ -25,4 +25,9 @@ public class TAddrController {
     public List<TAddr> getAll() {
         return service.getAll();
     }
+
+    @GetMapping("/all2")
+    public List<TAddr> getAll2() {
+        return service.getAll2();
+    }
 }

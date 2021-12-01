@@ -17,13 +17,10 @@ import java.util.List;
 @Service
 public class TAddrServiceImpl2 extends ServiceImpl<TAddrMapper2, TAddr> implements ITAddrService2 {
 
-    @Resource
-    private TAddrMapper2 mapper2;
 
     @Override
 
     public List<TAddr> getAll() {
         return lambdaQuery().list();
-//        return mapper2.getAll();
     }
 }
