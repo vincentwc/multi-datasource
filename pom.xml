@@ -17,14 +17,15 @@
 		<java.version>1.8</java.version>
 		<mybatis-plus.version>3.4.3</mybatis-plus.version>
 		<mybatis-plus-generator.version>3.4.1</mybatis-plus-generator.version>
+		<druid-version>1.2.8</druid-version>
 	</properties>
 	<dependencies>
-		<!--依赖pms-common包-->
 		<dependency>
-			<groupId>com.cecloud.cdp</groupId>
-			<artifactId>pms-common</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid-spring-boot-starter</artifactId>
+			<version>${druid-version}</version>
 		</dependency>
+
 		<!--httpclient-->
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
@@ -49,6 +50,10 @@
 			<version>2.8.0</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
