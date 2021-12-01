@@ -1,5 +1,6 @@
 package com.vincent.multidatasource.service.second.impl;
 
+import com.baomidou.dynamic.datasource.annotation.DS;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.vincent.multidatasource.dao.second.TAddrMapper2;
@@ -20,7 +21,9 @@ public class TAddrServiceImpl2 extends ServiceImpl<TAddrMapper2, TAddr> implemen
     private TAddrMapper2 mapper2;
 
     @Override
+
     public List<TAddr> getAll() {
-        return mapper2.getAll();
+        return lambdaQuery().list();
+//        return mapper2.getAll();
     }
 }
