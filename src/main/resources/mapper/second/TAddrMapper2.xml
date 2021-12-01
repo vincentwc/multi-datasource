@@ -3,7 +3,7 @@
 <mapper namespace="com.vincent.multidatasource.dao.second.TAddrMapper2">
 
         <!-- 通用查询映射结果 -->
-        <resultMap id="BaseResultMap" type="com.vincent.multidatasource.entity.TAddr2">
+        <resultMap id="BaseResultMap" type="com.vincent.multidatasource.entity.TAddr">
                     <id column="id" property="id" />
                     <result column="addr" property="addr" />
         </resultMap>
