@@ -29,4 +29,12 @@ public class AllImpl implements ITAddrServiceAll {
         list.addAll(list1);
         return list;
     }
+
+    @Override
+    public List<TAddr> getAll2() {
+        List<TAddr> list = service.list();
+        List<TAddr> list1 = service2.list();
+        list.addAll(list1);
+        return list;
+    }
 }
