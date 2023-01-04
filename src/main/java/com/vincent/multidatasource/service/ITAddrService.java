@@ -12,4 +12,10 @@ import java.util.List;
 public interface ITAddrService extends IService<TAddr> {
 
     List<TAddr> getAll();
+
+    void putDAta();
+
+    void putDAta2M();
+
+    void putDAta2S();
 }

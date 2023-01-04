@@ -2,7 +2,7 @@ package com.vincent.multidatasource.controller;
 
 
 import com.vincent.multidatasource.entity.TAddr;
-import com.vincent.multidatasource.service.ITAddrServiceAll;
+import com.vincent.multidatasource.service.ITAddrService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,15 +19,25 @@ public class TAddrController {
 
 
     @Resource
-    private ITAddrServiceAll service;
+    private ITAddrService service;
 
     @GetMapping("/all")
     public List<TAddr> getAll() {
         return service.getAll();
     }
 
-    @GetMapping("/all2")
-    public List<TAddr> getAll2() {
-        return service.getAll2();
+    @GetMapping("/put")
+    public void putData(){
+        service.putDAta();
+    }
+
+    @GetMapping("put-m")
+    public void putData2M(){
+        service.putDAta2M();
+    }
+
+    @GetMapping("put-s")
+    public void putData2S(){
+        service.putDAta2S();
     }
 }

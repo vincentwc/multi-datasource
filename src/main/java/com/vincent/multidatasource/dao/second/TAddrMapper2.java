@@ -7,7 +7,7 @@ import com.vincent.multidatasource.entity.TAddr;
 /**
  * @author vincent
  */
-@DS("slave")
+@DS("pcd_43")
 public interface TAddrMapper2 extends BaseMapper<TAddr> {
 
 }
